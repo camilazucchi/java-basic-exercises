@@ -47,6 +47,7 @@ public class Exercise0203 {
             }
         } while (true);
 
+        scanner.close();
     }
 
 

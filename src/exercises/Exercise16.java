@@ -19,14 +19,14 @@ public class Exercise16 {
         System.out.println("Please, enter the second binary number: ");
         String binary2 = scanner.next();
 
-        // Converte os números binários em inteiros:
+        // Convert the binary numbers to integers:
         int decimal1 = Integer.parseInt(binary1, 2);
         int decimal2 = Integer.parseInt(binary2, 2);
 
-        // Realiza a adição:
+        // Perform addition:
         int sum = decimal1 + decimal2;
 
-        // Converte o resultado de volta para binário:
+        // Convert the result back to binary:
         String binarySum = Integer.toBinaryString(sum);
 
         System.out.println("Sum of two binary numbers: " + binarySum);

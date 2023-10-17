@@ -19,14 +19,14 @@ public class Exercise17 {
         System.out.println("Please, enter the second binary number: ");
         String binary2 = scanner.next();
 
-        // Converte os números binários em inteiros:
+        // Convert the binary numbers to integers:
         int decimal1 = Integer.parseInt(binary1, 2);
         int decimal2 = Integer.parseInt(binary2, 2);
 
-        // Realiza a multiplicação:
+        // Perform the multiplication:
         int multiply = decimal1 * decimal2;
 
-        // Converte o resultado de volta para binário:
+        // Convert the result back to binary:
         String binaryMultiply = Integer.toBinaryString(multiply);
 
         System.out.println("Product of two binary numbers: " + binaryMultiply);

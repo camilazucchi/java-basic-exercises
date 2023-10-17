@@ -16,7 +16,10 @@ public class Exercise18 {
         System.out.println("Please, enter the number you want to convert to a binary number: ");
         int number = scanner.nextInt();
 
-        // Converte o número decimal em binário
+        // Convert the decimal number to binary
+        /* The java.lang.Integer.toBinaryString() method returns a string representation of the integer argument
+        as an unsigned integer in base 2. It accepts an argument in Int data-type and returns the corresponding
+        binary string. */
         String binaryNumber = Integer.toBinaryString(number);
 
         System.out.println("Binary number is: " + binaryNumber);

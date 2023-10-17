@@ -14,26 +14,25 @@ public class Exercise12 {
         Input fifth number: 50
         */
         Scanner scanner = new Scanner(System.in);
+        int numCount = 5;
+        int[] inputNumbers = new int[numCount];
+        int sumOfInputNumbers = 0;
 
-        System.out.println("Please, enter the first number: ");
-        int inputFirstNumber = scanner.nextInt();
+        for (int inputCount = 0; inputCount < numCount; inputCount++) {
+            System.out.print("Please enter number " + (inputCount + 1) + ": ");
+            if (scanner.hasNextInt()) {
+                inputNumbers[inputCount] = scanner.nextInt();
+                sumOfInputNumbers += inputNumbers[inputCount];
+            } else {
+                System.out.println("Invalid input. Please enter a valid number.");
+                scanner.nextLine();  // Clear the input buffer
+                inputCount--;  // Decrement inputCount to re-enter the same number
+            }
+        }
 
-        System.out.println("Please, enter the second number: ");
-        int inputSecondNumber = scanner.nextInt();
+        int averageOfInputNumbers = sumOfInputNumbers / numCount;
 
-        System.out.println("Please, enter the third number: ");
-        int inputThirdNumber = scanner.nextInt();
-
-        System.out.println("Please, enter the fourth number: ");
-        int inputFourthNumber = scanner.nextInt();
-
-        System.out.println("Please, enter the fifth number: ");
-        int inputFifthNumber = scanner.nextInt();
-
-        int sumOfInputNumbers = inputFirstNumber + inputSecondNumber + inputThirdNumber + inputFourthNumber + inputFifthNumber;
-        int averageOfInputNumbers = sumOfInputNumbers / 5;
-
-        System.out.println("The average of the three numbers is: " + averageOfInputNumbers);
+        System.out.println("The average of the five numbers is: " + averageOfInputNumbers);
 
         scanner.close();
     }

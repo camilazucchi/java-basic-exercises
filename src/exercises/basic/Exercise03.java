@@ -1,22 +1,23 @@
-package exercises;
+package exercises.basic;
 
 import java.util.Scanner;
 
-public class Exercise02 {
+public class Exercise03 {
     public static void main(String[] args) {
-        /* 2. Write a Java program to print the sum of two numbers.
+        /* 3. Write a Java program to divide two numbers and print them on the screen.
         Test Data:
-        74 + 36
+        50/3
         Expected Output:
-        110 */
+        16
+        */
         Scanner scanner = new Scanner(System.in);
-        System.out.println("-- SUM CALCULATOR --");
+        System.out.println("-- DIVISION CALCULATOR --");
         System.out.println("Please, enter the first number: ");
         double firstNumber = scanner.nextDouble();
         System.out.println("Please, enter the second number: ");
         double secondNumber = scanner.nextDouble();
-        int sumOfNumbers = (int) firstNumber + (int) secondNumber;
-        System.out.println("The sum of the two numbers is: " + sumOfNumbers);
+        int divOfNumbers = (int) firstNumber / (int) secondNumber;
+        System.out.println("The divide of the two numbers is: " + divOfNumbers);
 
         scanner.close();
     }

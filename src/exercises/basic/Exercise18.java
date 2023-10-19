@@ -1,6 +1,5 @@
-package exercises;
+package exercises.basic;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Exercise18 {
